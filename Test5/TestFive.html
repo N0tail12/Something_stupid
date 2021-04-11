@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test five</title>
+	<style type="text/css">
+	body{
+		font-family: system-ui;
+		background-color: #3a3d40;
+	}
+	ul{
+		float: right;
+		width: 35vw;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: space-around;
+	}
+	li{
+		list-style: none;
+	}
+	#navbar{
+		display: flex;
+	    justify-content: flex-end;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    background-color: #660033;
+	}
+	#navbar a{
+		color: red;
+		transition: width 2s; 
+		font-size: 20px;
+		font-weight: bolder;
+		text-decoration: none;
+	}
+	#navbar a:hover{
+		color: blue;
+		border: solid 1px #ccc;
+	}
+	#welcome-section{
+		height: 100vh;
+		color: white;
+		background-color: #666666;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+	}
+	#welcome-section h1{
+		font-size: 6rem;
+	}
+	#welcome-section p{
+		font-size: 2rem;
+		font-style: italic;
+		color: #cc0066;
+	}
+	#projects{
+		height: 100vh;
+		background-color: #45567D;
+	}
+	#container{
+		background-color: black;
+		width: 450px;
+		margin: 0 auto 50px auto;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+	#container p{
+		text-align: center;
+	}
+	#container a{
+		 text-decoration: none;
+		 color: white;
+	}
+	@media (max-width: 28.75em) {
+  	#welcome-section {
+    font-size: 4rem;
+  }
+}
+	</style>
+</head>
+<body>
+<nav id="navbar">
+	<ul>
+		<li><a href="#welcome-section">About me</a></li>
+		<li><a href="#projects">Come and see my project</a></li>
+		<li><a href="https://github.com/N0tail12" target="_blank" id="profile-link">My git contact</a></li>
+	</ul>
+</nav>
+<section id="welcome-section">
+	<h1>Hello!</h1>
+	<p>I am N0tail, a newbie</p>
+</section>
+<section id="projects">
+	<div id="container">
+		<a href="https://codepen.io/n0tail12/pen/MWJozdg" target="_blank"><img src="preview.png" style="width: 400px; height: 300px"><p class="project-tile">Solar System</p></a>
+	</div>
+</section>
+</body>
+</html>

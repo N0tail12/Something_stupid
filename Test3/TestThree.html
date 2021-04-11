@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Three</title>
+</head>
+<style type="text/css">
+	body{
+		font-family: system-ui;
+	}
+	header {	
+	position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #37AF65;
+}
+#feature{
+	text-align: center;
+}
+ul{
+	width: 35vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+video-outline{
+	margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+form{
+	width: 100%;
+	text-align: center;
+}
+#email{
+	width: 15rem;
+	height: 1.125rem;
+}
+#input{
+		width: 15rem;
+		margin-bottom: 10px;
+		background-color: #37AF65;
+		border: none;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		margin: 4px 2px;
+  		cursor: pointer;
+	}
+	@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
+</style>
+<body>
+	<div>
+<header id="header">
+	<img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" id="header-img" style="max-width: 300px">
+	<nav id="nav-bar">
+		<ul>
+		<li><a class="nav-link" href="#feature">Fetures</a></li>
+		<li><a class="nav-link" href="#video">How It Works</a></li>
+		<li><a href="#full" class="nav-link"> full</a></li>
+      <li><a class="nav-link" href="#form">form</a></li>
+	</ul>
+	</nav>
+</header>
+</div>
+	<div id="feature">
+		<h1>Premium Materials</h1>
+		<p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+		<h1>Fast Shipping</h1>
+		<p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+		<h1>Quality Assurance</h1>
+		<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+	</div>
+	<div id="video-outline">
+			<iframe width="640" height="440" src="https://www.youtube.com/embed/mGv0ze0lHKA?list=RDqoYTtRLk1KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+	</div>
+	<div id="full"> almost done</div>
+	<form action="https://www.freecodecamp.org/email-submit" target="_blank" id="form">
+		<h1>Enter your Email here</h1>
+		<input type="email" name="email" id="email" placeholder="Enter your email:" required><br>
+		<input type="submit" id="submit">
+	</form>
+</body>
+</html>
